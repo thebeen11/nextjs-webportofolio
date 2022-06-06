@@ -13,7 +13,7 @@ function contact() {
             type="text"
             name="email-address"
             id="email-address"
-            autocomplete="email"
+            autoComplete="email"
             placeholder="xyz@email.com"
             className="mt-5 pb-1 pl-8 w-full rounded-tl-lg rounded-bl-lg text-blue-800 text-xl outline-none border-2 border-primary"
           />
