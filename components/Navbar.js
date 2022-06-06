@@ -80,20 +80,17 @@ function Navbar() {
 
             {/* Mobile */}
             <div className="mr-14 flex md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                type="button"
-                className="bg-secondary inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white"
-                aria-controls="mobile-menu"
-                aria-expanded={false}
-              >
-                <span className="sr-only"> Open main menu</span>
-                {!isOpen ? 
-                <>
-                
+              {!isOpen ? (
+                <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  type="button"
+                  className="bg-secondary inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white"
+                  aria-controls="mobile-menu"
+                  aria-expanded={false}
+                >
                   <svg
                     className="block h-6 w-6"
-                    xlmns="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -103,15 +100,21 @@ function Navbar() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      d="M4 6h16M4 12h12M4 18h16"
+                      d="M4 6h16M4 12h16M4 18h16"
                     />
                   </svg>
-                
-                </> : 
-                 <>
+                </button>
+              ) : (
+                <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  type="button"
+                  className="bg-secondary inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white"
+                  aria-controls="mobile-menu"
+                  aria-expanded={false}
+                >
                   <svg
                     className="block h-6 w-6"
-                    xlmns="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -123,9 +126,9 @@ function Navbar() {
                       strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
-                  </svg></>
-                }
-              </button>
+                  </svg>
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -141,12 +144,12 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div
-                ref={ref}
+                
                 className="bg-white mx-4 mr-20 py-4 pb-4 space-y-1"
               >
                 <Link
                   href="/home"
-                  activeClass="Home"
+                  activeClass="home"
                   to="home"
                   smooth={true}
                   offset={50}
@@ -157,7 +160,7 @@ function Navbar() {
                 </Link>
                 <Link
                   href="/services"
-                  activeClass="Services"
+                  activeClass="services"
                   to="services"
                   smooth={true}
                   offset={50}
@@ -167,9 +170,9 @@ function Navbar() {
                   Services
                 </Link>
                 <Link
-                  href="/work"
-                  activeClass="Work"
-                  to="work"
+                  href="/project"
+                  activeClass="project"
+                  to="project"
                   smooth={true}
                   offset={50}
                   duration={500}
@@ -178,19 +181,19 @@ function Navbar() {
                   Porjects
                 </Link>
                 <Link
-                  href="/clients"
-                  activeClass="Clients"
-                  to="clients"
+                  href="/work"
+                  activeClass="work"
+                  to="work"
                   smooth={true}
                   offset={50}
                   duration={500}
                   className="cursor-pointer text-black hover:bg-secondary hover:text-white block rounded-md px-3 py-2 text-base font-medium"
                 >
-                  Clients
+                  Work
                 </Link>
                 <Link
                   to="/contact"
-                  activeClass="Contact"
+                  activeClass="contact"
                   to="contact"
                   smooth={true}
                   offset={50}
