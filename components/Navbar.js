@@ -88,7 +88,9 @@ function Navbar() {
                 aria-expanded={false}
               >
                 <span className="sr-only"> Open main menu</span>
-                {!isOpen ? (
+                {!isOpen ? 
+                <>
+                
                   <svg
                     className="block h-6 w-6"
                     xlmns="http://www.w3.org/2000/svg"
@@ -99,12 +101,14 @@ function Navbar() {
                   >
                     <path
                       strokeLinecap="round"
-                      strokeLineJoin="round"
+                      strokeLinejoin="round"
                       strokeWidth="2"
                       d="M4 6h16M4 12h12M4 18h16"
                     />
                   </svg>
-                ) : (
+                
+                </> : 
+                 <>
                   <svg
                     className="block h-6 w-6"
                     xlmns="http://www.w3.org/2000/svg"
@@ -119,8 +123,8 @@ function Navbar() {
                       strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
-                  </svg>
-                )}
+                  </svg></>
+                }
               </button>
             </div>
           </div>
