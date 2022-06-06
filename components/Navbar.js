@@ -192,7 +192,7 @@ function Navbar() {
                   Work
                 </Link>
                 <Link
-                  to="/contact"
+                  href="/contact"
                   activeClass="contact"
                   to="contact"
                   smooth={true}
