@@ -7,7 +7,7 @@ function services() {
     <Element id="services" name="services">
       <div className="w-fill my-40 h-auto flex flex-col justify-center items-center">
         <p className="text-sm uppercase text-gray-400">My Skill</p>
-        <h1 className="text-primary md:text-6xl text-4xl font-bold text-center">
+        <h1 className="text-primary md:text-6xl text-4xl  text-center">
           My Expertise
         </h1>
 
@@ -30,7 +30,7 @@ function services() {
               <h1 className="text-xl text-secondary font-semibold">React.Js</h1>
             </div>
             <p className="md:text-base text-gray-400 md:text-center sm:text-left sm:text-sm">
-            1 year experience using react.js with react hook, redux and axios.
+            1 year experience using react.js with react hook, redux and axios
             </p>
           </div>
         </div>
@@ -42,8 +42,7 @@ function services() {
               <h1 className="text-xl text-secondary font-semibold">Vue.Js</h1>
             </div>
             <p className="md:text-base text-gray-400 md:text-center sm:text-left sm:text-sm">
-              Adipisicing cillum magna aliquip voluptate nisi eu enim incididunt
-              elit pariatur ex deserunt reprehenderit.
+            3 years experience using vue.js as a frontend web framework. Accustomed to using vuex, state management, and axios
             </p>
           </div>
           <div className="flex flex-col justify-center items-center">
@@ -54,8 +53,7 @@ function services() {
               </h1>
             </div>
             <p className="md:text-base text-gray-400 md:text-center sm:text-left sm:text-sm">
-              Adipisicing cillum magna aliquip voluptate nisi eu enim incididunt
-              elit pariatur ex deserunt reprehenderit.
+            can use node.js for backend services with mongodb databases such as create, read, update, and delete
             </p>
           </div>
         </div>

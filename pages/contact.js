@@ -5,7 +5,7 @@ function contact() {
     <Element id="contact" name="contact">
       <div className="w-full my-20 h-auto flex flex-col justify-center items-center">
         <p className="text-sm uppercase text-gray-400">Contact</p>
-        <h1 className="text-primary text-6xl font-bold text-center">
+        <h1 className="text-primary md:text-6xl text-4xl  text-center">
           Contact
         </h1>
         <div className="flex justify-center text-center w-full md:w-1/2 my-5">
