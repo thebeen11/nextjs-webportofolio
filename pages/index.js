@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Contact from './contact'
 import HomePage from './homePage'
@@ -21,7 +22,8 @@ export default function Home() {
       <Services/>
       <Project/>
       <Work/>
-      <Contact/>
+      {/* <Contact/> */}
+      <Footer/>
     </div>
   )
 }
