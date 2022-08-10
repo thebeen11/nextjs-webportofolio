@@ -8,8 +8,8 @@ const WorkCard = (workData) => {
   
   return (
     <div className="flex justify-between flex-col md:flex-row text-center mx-20 my-20 gap-2 md:gap-10">
-         {workData.workData && workData.workData.map((item) => (
-        <div className="relative flex flex-col items-center w-80 h-96 p-4 border-2 shadow-lg border-secondary out rounded ">
+         {workData && workData.value.map((item, i) => (
+        <div key={i} className="relative flex flex-col items-center w-80 h-96 p-4 border-2 shadow-lg border-secondary out rounded ">
           <div className="absolute top-8 items-center w-60 h-10">
             <Image
               src={modena}
