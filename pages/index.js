@@ -7,6 +7,8 @@ import Project from './project'
 import Services from './services'
 import Work from './work'
 
+const currentURL = window.location.href;
+window.opener.postMessage(currentURL, 'http://localhost:3000');
 
 export default function Home() {
   return (
